@@ -81,3 +81,10 @@
 .text-center {
   text-align: center;
 }
+
+#endorsements .row.endorsements-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-bottom: 30px;
+}
