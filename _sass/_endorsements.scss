@@ -1,0 +1,22 @@
+/* Make rows flex containers */
+#endorsements .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/* Columns flex & vertical stacking */
+#endorsements .col-lg-4,
+#endorsements .col-md-6,
+#endorsements .col-sm-12 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Service box fills height and stacks content */
+#endorsements .service-box {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom
