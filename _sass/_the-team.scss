@@ -29,6 +29,7 @@
 
   // Add some left padding on small screens so content isn't flush left
   @media (max-width: 760px) {
+    .col-md-6,
     .col-sm-12 {
       padding-left: 15px;
       padding-right: 15px;
