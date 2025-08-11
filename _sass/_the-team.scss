@@ -71,6 +71,7 @@
     margin: auto;
   }
 
+  // Mobile: padding inside columns
   @media (max-width: 767.98px) {
     .col-sm-12 {
       padding-left: 15px;
@@ -78,3 +79,11 @@
     }
   }
 }
+
+  // Desktop and up: add left padding on columns to separate photos from left edge
+  @media (min-width: 768px) {
+    .col-md-6 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
