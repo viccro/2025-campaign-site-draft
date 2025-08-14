@@ -152,6 +152,9 @@ p {
     cursor: pointer;
     position: relative;
     transition: background-color 0.3s ease;
+    max-width: 67%;
+    margin-left: auto;
+    margin-right: auto;
 
     h4 {
         margin: 0;
@@ -191,6 +194,9 @@ p {
     border-top: none;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    max-width: 67%;
+    margin-left: auto;
+    margin-right: auto;
 
     &.expanded {
         display: block;
