@@ -85,6 +85,31 @@ p {
     margin: 0 25px;
 }
 
+.experience-section-header {
+    margin-bottom: 25px;
+}
+
+.experience-section-divider {
+    margin-top: 60px;
+}
+
+.future-goals-list {
+    margin: 0 25px;
+    text-align: left;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+    .future-goals-list {
+        max-width: 720px;
+        margin: 0 auto;
+        display: block;
+        padding: 0 15px;
+    }
+}
+
 @media (min-width: 1200px) {
     .experience-card {
         margin-bottom: 0 !important;
