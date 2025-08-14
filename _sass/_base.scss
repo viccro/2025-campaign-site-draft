@@ -36,6 +36,7 @@ h4,
 h5,
 h6 {
     @include sans-serif-font;
+    color: #2A2A2A;
 }
 
 h2 {
@@ -265,6 +266,16 @@ section {
 
 aside {
     padding: 50px 0;
+}
+
+// Vote section styling
+#vote aside.bg-dark {
+    background-color: #2A2A2A;
+    padding: 70px 0;
+}
+
+#vote .call-to-action h2 {
+    font-weight: 400;
 }
 
 .no-padding {
@@ -575,6 +586,10 @@ header {
 }
 
 // Contact
+#contact {
+    padding: 30px 0;
+}
+
 #contact .fa {
     color: $theme-dark;
     font-size: 4em;
