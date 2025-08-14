@@ -6,6 +6,7 @@ body {
 
 body {
     @include serif-font;
+    background-color: rgba(178, 34, 34, 0.02);
 }
 
 hr {
@@ -35,6 +36,16 @@ h4,
 h5,
 h6 {
     @include sans-serif-font;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 p {
@@ -99,6 +110,25 @@ p {
     display: inline-block;
     font-size: 16px;
     line-height: 1.5;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.future-goals-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+}
+
+.future-goals-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #28a745;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 @media (max-width: 991px) {
@@ -107,6 +137,62 @@ p {
         margin: 0 auto;
         display: block;
         padding: 0 15px;
+    }
+}
+
+// Accordion styles
+.accordion-header {
+    background-color: rgba(178, 34, 34, 0.1);
+    border: 1px solid rgba(178, 34, 34, 0.3);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+
+    h4 {
+        margin: 0;
+        color: rgb(178, 34, 34);
+        font-weight: 600;
+    }
+
+    &:hover {
+        background-color: rgba(178, 34, 34, 0.15);
+    }
+
+    &::after {
+        content: '+';
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: rgb(178, 34, 34);
+        font-weight: bold;
+        transition: transform 0.3s ease;
+    }
+
+    &.expanded::after {
+        content: '−';
+        transform: translateY(-50%) rotate(0deg);
+    }
+}
+
+.accordion-content {
+    display: none;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    &.expanded {
+        display: block;
     }
 }
 
@@ -147,6 +233,16 @@ p {
 }
 
 // Candidate section styles
+#vice-chair,
+#secretary {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+#secretary {
+    margin-top: -30px;
+}
+
 @media (max-width: 991px) {
     .candidate-column {
         max-width: 720px !important;
@@ -343,6 +439,14 @@ header {
 
 .section-heading {
     margin-top: 0;
+    font-size: 3.5rem !important;
+    font-weight: 800 !important;
+}
+
+.experience-section-header {
+    margin-bottom: 25px;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
 }
 
 .service-box {
