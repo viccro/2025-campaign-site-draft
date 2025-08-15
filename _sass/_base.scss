@@ -244,6 +244,10 @@ p {
     color: $theme-primary;
 }
 
+.candidate-bio-image {
+    max-width: 85% !important;
+}
+
 #vice-chair,
 #secretary {
     margin-bottom: 0;
