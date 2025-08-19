@@ -268,17 +268,40 @@ p {
     }
 }
 
-// Candidate sections - shared styling for vice chair and secretary
+// Union Vision - Clean centered text styling
+.union-vision-section {
+    text-align: center;
+    margin: 30px 0 50px 0;
+}
+
+.union-vision-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Candidate sections - shared styling for all candidate sections
 #vice-chair .candidate-column,
-#secretary .candidate-column {
+#secretary .candidate-column,
+#unit-chair-bio .candidate-column {
     max-width: 900px !important;
     width: 100% !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    display: block !important;
+    float: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 #vice-chair .service-box,
-#secretary .service-box {
+#secretary .service-box,
+#unit-chair-bio .service-box {
     max-width: none !important;
     width: 100%;
     margin: 20px 40px;
@@ -289,7 +312,8 @@ p {
 @media (min-width: 768px) {
 
     #vice-chair .vice-chair-image,
-    #secretary .secretary-image {
+    #secretary .secretary-image,
+    #unit-chair-bio .unit-chair-image {
         float: left;
         margin-right: calc(3vw + 40px); // Scales from ~60px to ~120px+ as screen grows
         margin-bottom: 45px;
@@ -300,7 +324,8 @@ p {
     }
 
     #vice-chair .service-box,
-    #secretary .service-box {
+    #secretary .service-box,
+    #unit-chair-bio .service-box {
         overflow: visible; // Allow text to wrap around floated image
     }
 }
@@ -309,7 +334,8 @@ p {
 @media (max-width: 767px) {
 
     #vice-chair .vice-chair-image,
-    #secretary .secretary-image {
+    #secretary .secretary-image,
+    #unit-chair-bio .unit-chair-image {
         float: none;
         margin-right: 0;
         margin-bottom: 20px;
