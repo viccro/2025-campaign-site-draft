@@ -144,13 +144,13 @@
         }
 
         .glyphicon {
-            color: darken($theme-primary, 20%);
+            color: $theme-primary; 
             font-size: 28px;
             top: 45%;
         }
 
         &:hover .glyphicon {
-            color: darken($theme-primary, 30%);
+            color: $theme-primary;  // Bright saturated red on hover
         }
     }
 
