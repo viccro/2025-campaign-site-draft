@@ -3,6 +3,8 @@
 // ================================================
 
 #endorsements-carousel {
+    // Remove top padding entirely
+    padding-top: 0 !important;  // Override default 100px section padding
 
     // ================================================
     // Responsive Carousel Visibility
