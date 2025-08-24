@@ -741,9 +741,20 @@ header {
     max-width: 120px !important;
 }
 
-#contact a {
+#contact .col-lg-12 a {
     display: block;
     text-align: center;
+}
+
+#contact .col-lg-8 a {
+    color: $theme-primary;
+    text-decoration: underline;
+    text-decoration-color: $theme-primary;
+    
+    &:hover {
+        color: darken($theme-primary, 15%);
+        text-decoration-color: darken($theme-primary, 15%);
+    }
 }
 
 // Extras

@@ -41,7 +41,13 @@
                                 <!-- Individual endorsement -->
                                 <div class="col-lg-4 col-md-4">
                                     <div class="endorsement-card text-center">
+                                        {% if endorsement_chunk.image and endorsement_chunk.image != "" %}
                                         <img class="endorsement-image center-block" src="{{ endorsement_chunk.image }}" alt="{{ endorsement_chunk.name }}">
+                                        {% else %}
+                                        <div class="endorsement-icon-placeholder center-block">
+                                            <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                                        </div>
+                                        {% endif %}
                                         <blockquote class="endorsement-quote">
                                             <p>"{{ endorsement_chunk.quote }}"</p>
                                             <footer class="endorsement-author">- {{ endorsement_chunk.name }}</footer>
@@ -82,7 +88,13 @@
                         {% for endorsement in endorsements %}
                         <div class="item {% if forloop.first %}active{% endif %}">
                             <div class="endorsement-card text-center">
+                                {% if endorsement.image and endorsement.image != "" %}
                                 <img class="endorsement-image center-block" src="{{ endorsement.image }}" alt="{{ endorsement.name }}">
+                                {% else %}
+                                <div class="endorsement-icon-placeholder center-block">
+                                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                                </div>
+                                {% endif %}
                                 <blockquote class="endorsement-quote">
                                     <p>"{{ endorsement.quote }}"</p>
                                     <footer class="endorsement-author">- {{ endorsement.name }}</footer>
