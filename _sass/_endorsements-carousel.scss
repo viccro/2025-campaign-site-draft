@@ -175,6 +175,10 @@
     .carousel-control {
         background: none;
         width: 40px;
+        position: absolute;
+        top: 225px; // Fixed position for desktop
+        height: 60px;
+        z-index: 10;
 
         &.left,
         &.right {
@@ -184,11 +188,21 @@
         .glyphicon {
             color: $theme-primary; 
             font-size: 28px;
-            top: 45%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         &:hover .glyphicon {
             color: $theme-primary;  // Bright saturated red on hover
+        }
+    }
+
+    // Mobile carousel controls positioning
+    @media (max-width: 991px) {
+        .carousel-control {
+            top: 275px; // Fixed position for mobile
         }
     }
 
