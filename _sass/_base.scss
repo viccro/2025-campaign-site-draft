@@ -708,6 +708,13 @@ strong {
     color: $theme-primary;
 }
 
+// Keep strong tags white on dark backgrounds
+.bg-primary strong,
+.bg-dark strong,
+.text-faded strong {
+    color: white;
+}
+
 .no-gutter>[class*='col-'] {
     padding-right: 0;
     padding-left: 0;
