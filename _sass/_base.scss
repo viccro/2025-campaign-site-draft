@@ -704,6 +704,10 @@ header {
     color: $theme-primary;
 }
 
+strong {
+    color: $theme-primary;
+}
+
 .no-gutter>[class*='col-'] {
     padding-right: 0;
     padding-left: 0;
